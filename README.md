@@ -1,5 +1,7 @@
 # CareerPilotAI
 
+[![CI](https://github.com/Simar-dev502/CareerPilotAI/actions/workflows/ci.yml/badge.svg)](https://github.com/Simar-dev502/CareerPilotAI/actions/workflows/ci.yml)
+
 AI-powered career development platform that helps students and job seekers improve their resumes, prepare for interviews, identify skill gaps, generate cover letters, receive job recommendations, and build personalized learning roadmaps.
 
 ## Project Overview
@@ -39,6 +41,13 @@ cd frontend
 npm install
 npm run dev
 ```
+
+## Continuous Integration
+
+This repository includes a GitHub Actions workflow at `.github/workflows/ci.yml`.
+The workflow runs on `push` and `pull_request` for the `main` branch and performs:
+- backend dependency install and Python source compilation
+- frontend dependency install and Vite production build
 
 ## Deployment
 - Frontend: Vercel
