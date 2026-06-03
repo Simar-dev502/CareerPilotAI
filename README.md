@@ -1,19 +1,28 @@
-# CareerPilot AI
+# CareerPilotAI
 
-Starter scaffold for CareerPilot AI — full-stack SaaS career assistant.
+AI-powered career development platform that helps students and job seekers improve their resumes, prepare for interviews, identify skill gaps, generate cover letters, receive job recommendations, and build personalized learning roadmaps.
 
-Folders:
+## Project Overview
+
+CareerPilot AI is a full-stack SaaS career assistant built with:
 - `frontend/` React + TypeScript + Vite + Tailwind
 - `backend/` FastAPI + Motor (MongoDB)
 
-Features:
+### Features
+- Resume analysis and ATS-friendly insights
+- Interview prep and question generation
+- Cover letter generation
+- Job recommendations
+- Personalized learning roadmap generation
 - Analytics dashboard with charts and activity history
 
-Environment files:
+### Environment files
 - `./backend/.env.example`
 - `./frontend/.env.example`
 
-Quick start (backend):
+## Quick Start
+
+### Backend
 
 ```bash
 cd backend
@@ -23,7 +32,7 @@ pip install -r requirements.txt
 uvicorn app.main:app --reload --host 0.0.0.0 --port 8000
 ```
 
-Quick start (frontend):
+### Frontend
 
 ```bash
 cd frontend
@@ -31,12 +40,10 @@ npm install
 npm run dev
 ```
 
-Deployment:
+## Deployment
 - Frontend: Vercel
 - Backend: Render
 - Database: MongoDB Atlas
-
-## Deployment Configuration
 
 ### Frontend on Vercel
 - Deploy the `frontend/` folder as a Vercel project.
@@ -68,3 +75,4 @@ Deployment:
 ### Notes
 - The backend supports Firebase credentials from a file path or a JSON string.
 - In Render, using `FIREBASE_CREDENTIALS_JSON` is the easiest option for service account credentials.
+
